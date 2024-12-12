@@ -8,7 +8,7 @@ class AnswerSearcher:
             host="127.0.0.1",
             http_port=7474,
             user="neo4j",
-            password="lhy123")
+            password="teng")
         self.num_limit = 20
 
     '''执行cypher查询，并返回相应结果'''
