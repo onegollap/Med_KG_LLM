@@ -25,7 +25,6 @@ class ModelAPI():
             print("request error", e)
             return "", []
 
-    ## 防止并不稳定，需要多次访问
     def chat(self, query, history=[]):
         message = [{"role": "user", "content": query}]
         count = 0
@@ -41,8 +40,3 @@ class ModelAPI():
                 print('Exception:', e)
                 time.sleep(1)
         return response, history
-
-if __name__ == '__main__':
-    model = ModelAPI(MODEL_URL="http://xxxxxxx:6666/generate")
-    res= model.chat(query="你叫啥", history=[])
-    print(res)
