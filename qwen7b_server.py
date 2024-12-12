@@ -39,4 +39,4 @@ def generate():
     return jsonify({"output":[res], "status":label})
    
 if __name__ == '__main__':
-    app.run(port=3001, debug=False, host='0.0.0.0')  # 如果是0.0.0.0，则可以被外网访问
+    app.run(port=3001, debug=False, host='0.0.0.0')
